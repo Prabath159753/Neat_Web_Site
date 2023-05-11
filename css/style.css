@@ -1,0 +1,161 @@
+/********** Template CSS **********/
+:root {
+    --primary: #061846;
+    --secondary: #BDBDBF;
+    --lightblue: #5684FC;
+    --light: #F4F5F8;
+    --dark: #222429;
+    --white: #ffffff;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.font-weight-extra-bold {
+    font-weight: 800 !important;
+}
+
+.font-weight-Regular {
+    font-weight: 400 !important;
+}
+
+.font-size-1-1rem {
+    font-size: 1.1rem;
+}
+
+.font-size-1-5rem {
+    font-size: 1.5rem;
+}
+
+.font-family-Alumni-Sans {
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.font-family-Barlow {
+    font-family: 'Barlow', sans-serif;
+}
+
+.letter-spacing {
+    letter-spacing: 0.9px;
+}
+
+.letter-spacing-medium {
+    letter-spacing: 0.5px;
+}
+
+.btn {
+    font-family: 'Alumni Sans', sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 30px;
+    height: 28px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Alumni Sans', sans-serif;
+    margin-right: 30px;
+    padding: 11px 4px;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--lightblue);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 36, 41, .8);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.about-box {
+    background-color: #C6CCDE;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #222429;
+}
+
+.about-box-p {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 500 !important;
+    color: #222429;
+}
