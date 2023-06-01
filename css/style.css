@@ -26,6 +26,7 @@ h6,
     font-weight: 500 !important;
 }
 
+h2,
 .font-weight-extra-bold {
     font-weight: 800 !important;
 }
@@ -56,6 +57,10 @@ h6,
 
 .letter-spacing-medium {
     letter-spacing: 0.5px;
+}
+
+.line-height-normal {
+    line-height: normal;
 }
 
 .btn {
@@ -158,4 +163,386 @@ h6,
     letter-spacing: 0.2px;
     font-weight: 500 !important;
     color: #222429;
+}
+
+
+.footer-daylist a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-link-custom a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+    font-size: 1.3rem;
+}
+
+.footer-link-custom a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer-link-custom a:hover {
+    color: #5684FC;
+    letter-spacing: 1px;
+}
+
+
+
+/* === card ==== */
+.note {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Merriweather", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+  
+article.card {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* left: 50%; */
+    width: auto;
+    height: 400px;
+    /* transform: translate(-50%, -50%) translateZ(0); */
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+article.card .thumb {
+    width: auto;
+    height: 330px;
+    /* background: url("../img/carousel-1.jpg") no-repeat center; */
+    background-size: cover;
+    border-radius: 3px;
+}
+
+article.card .infos {
+    width: auto;
+    height: 1000px;
+    
+    padding: 16px 24px;
+    background: #fff;
+    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+article.card .infos .title {
+    
+    margin: 0px 0;
+    letter-spacing: 2px;
+    color: #F87575;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px #32577f;
+    text-align: center;
+    padding-bottom: 30PX;
+}
+
+article.card .infos .flag {
+    
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+}
+
+article.card .infos .date, article.card .infos .seats {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: rgba(21, 37, 54, 0.7);
+    font-family: "Grotesque", sans-serif;
+}
+
+article.card .infos .seats {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+article.card .infos .txt {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #686A6F;
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+article.card .infos .details {
+    
+    left: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 20px 24px;
+    letter-spacing: 1px;
+    color: #4e958b;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+article.card:hover .infos {
+    transform: translateY(-330px);
+}
+
+article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
+    opacity: 1;
+} 
+
+
+
+
+.owl-carousel {
+    position: relative; 
+}
+.owl-carousel .owl-item {
+    opacity: 1; 
+}
+.owl-carousel .owl-item.active {
+    opacity: 1; 
+}
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%; 
+}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: -10px;
+    color: rgba(0, 0, 0, 0.1) !important;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+    opacity: 0; 
+}
+@media (prefers-reduced-motion: reduce) {
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; 
+    }
+}
+.owl-carousel .owl-nav .owl-prev span:before,
+.owl-carousel .owl-nav .owl-next span:before {
+    font-size: 30px; 
+}
+.owl-carousel .owl-nav .owl-prev {
+    left: 0; 
+}
+.owl-carousel .owl-nav .owl-next {
+    right: 0; 
+}
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px; 
+}
+.owl-carousel .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    position: relative;
+    border: #ff487e;
+}
+.owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
+    outline: none !important;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+    background: #ff487e; 
+}
+.owl-carousel:hover .owl-nav .owl-prev {
+    left: -25px; 
+}
+.owl-carousel:hover .owl-nav .owl-next {
+    right: -25px; 
+}
+  
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y; 
+}
+
+
+
+/* --------- about page --------- */
+
+.bg-hero {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/Homepage_Banner1.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.about-page-aboutus-title {
+    font-size: 4rem;
+    line-height: 0.9;
+}
+
+.about-service-product-card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 200px;
+    left: 0;
+    background: #061846;
+    z-index: -1;
+}
+
+.why-chose-us span {
+    font-size: 2.8rem;
+    height: 90px;
+    width: 90px;
+    background: rgba(255, 255, 255, 0.178);
+    border-radius: 50%;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 90px;
+    text-align: center;
+}
+
+.why-chose-us-item:hover span{
+    background: #5684FC;
+    color: #ffffff;
+}
+
+article.client-card {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* left: 50%; */
+    width: auto;
+    height: 120px;
+    /* transform: translate(-50%, -50%) translateZ(0); */
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+
+/* --------- contact us page --------- */
+
+.contact-item-card div{
+    background: rgba(255, 255, 255, 0.178);
+    color: #ffffff;
+}
+
+.contact-item-card:hover div{
+    background: #5684FC;
+    color: #ffffff;
+}
+
+
+
+/* --------- product us page --------- */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+}
+
+.product-item {
+    /* width: 160px; */
+    /* height: 200px; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 25%);
+}
+
+.product-item img {
+    width: 250px;
+    height: 220px;
+    margin-bottom: 25px;
+}
+
+.product-item h2 {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.product-item p {
+    text-align: left;
+    padding-left: 8px;
+    margin-bottom: 0;
+    line-height: 0.6;
+    color: #686A6F;
+    font-weight: 700 !important;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+.product-filter-button span{
+    font-weight: 700 !important;
+}
+
+/* popup window in product details page */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Add the backdrop-filter property */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Add a higher z-index to ensure it appears above other content */
+}
+ 
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+ 
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.product-detail-firstRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* grid-template-columns: auto auto;
+    grid-gap: 0px; */
 }
