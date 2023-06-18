@@ -43,7 +43,7 @@
         <div class="row gx-0">
             <div class="col-lg-3 bg-primary d-none d-lg-block">
                 <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <img class="w-100 opacity-25 mb-4" src="img/Logo.png" alt="Image" style="width: auto !important; height: 60px;">
+                    <img class="w-100 opacity-25" src="img/Logo.png" alt="Image" style="width: auto !important; height: 60px;">
                     <!-- <h1 class="m-0 display-4 text-primary text-uppercase">Neat</h1> -->
                 </a>
             </div>
@@ -52,11 +52,11 @@
                     <div class="col-lg-7 px-5 text-start">
                         <div class="h-100 d-inline-flex align-items-center me-4">
                             <i class="fa fa-envelope text-primary me-2 text-white"></i>
-                            <h6 class="mb-0 text-white letter-spacing font-size-1-1rem">neat@gmail.com</h6>
+                            <h6 class="mb-0 text-white letter-spacing font-size-1-1rem">info@neatscales.lk</h6>
                         </div>
                         <div class="h-100 d-inline-flex align-items-center">
                             <i class="fa fa-phone-alt text-primary me-2 text-white"></i>
-                            <h6 class="mb-0 text-white letter-spacing font-size-1-1rem">+(94) 095 258 2584</h6>
+                            <h6 class="mb-0 text-white letter-spacing font-size-1-1rem">0777 312 949 / 0777 558 717</h6>
                         </div>
                     </div>
                     <div class="col-lg-5 px-5 text-end">
@@ -103,114 +103,110 @@
         <div class="row py-0">
             <div class="col-12 text-center">
                 <h1 class="display-2 text-uppercase text-white font-family-Alumni-Sans">Products</h1>
-                
             </div>
         </div>
     </div>
     <!-- Banner End -->
 
-    <div class="container-fluid p-5 ">
+    <!-- fliter section -->
+    <div class="container-fluid p-4">
         <div class="product-category-filter">
             <div class="row">
                 <div class="col-sm-12 text-center">
 
-                    <a class="btn btn-primary product-filter-button" href="#" data-filter="all">
+                    <a class="btn btn-primary product-filter-button" id="btnAll" onclick="filterProducts('all')">
                         <i class="fa fa-map-marker-alt"></i>
                         <span>All</span>
                     </a>
 
-                    <a class="btn btn-outline-primary product-filter-button" href="#" data-filter="nature">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnLoadCells" onclick="filterProducts('Load Cells')">
                         <i class="fa fa-map-marker-alt" ></i>
                         <span>Load Cells</span>
                     </a>
 
-                    <a class="btn btn-outline-primary product-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnHangingAndCranesScales" onclick="filterProducts('Hanging & Cranes Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
                         <span>Hanging & Crane Scales</span>
                     </a>
 
-                    <a class="btn btn-outline-primary product-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnWeighingAndCountingScales" onclick="filterProducts('Weighing and Counting Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
                         <span>Weighing & Counting Scales</span>
                     </a>
 
-
-
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="computer">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnPlatformAndFloorScales" onclick="filterProducts('Platform and Floor Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Platform & Floor Scales
+                        <span>Platform & Floor Scales</span>
                     </a>
 
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnAnalyticalDensityAndMoistureScales" onclick="filterProducts('Analytical, Density and Moisture Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Analytical, Density & Moisture Scales
+                        <span>Analytical, Density & Moisture Scales</span>
                     </a>
 
-                    
-
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnWeighbridgesAndWeighpads" onclick="filterProducts('Weighbridges and Weighpads')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Weighbridges an Weigh-pads
+                        <span>Weighbridges an Weigh-pads</span>
                     </a>
 
-                    
-
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnWaterproofScales" onclick="filterProducts('Waterproof Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Waterproof Scales
+                        <span>Waterproof Scales</span>
                     </a>
 
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnWeighingIndicators" onclick="filterProducts('Weighing Indicators')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Weighing Indicators
+                        <span>Weighing Indicators</span>
                     </a>
 
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnBenchScales" onclick="filterProducts('Bench Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Bench Scales
+                        <span>Bench Scales</span>
                     </a>
 
-                    <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="food">
+                    <a class="btn btn-outline-primary product-filter-button" id="btnPriceComputingAndRetailScales" onclick="filterProducts('Price Computing and Retail Scales')">
                         <i class="fa fa-map-marker-alt" ></i>
-                        Price Computing & Retail Scales
+                        <span>Price Computing & Retail Scales</span>
                     </a>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid p-5 ">
+    <!-- Product Items Dynamically Generate Start -->
+    <div class="container-fluid p-5 product-container">
         <div class="product-grid" id="productGrid">
             <!-- Product items will be dynamically generated here -->
         </div>
     </div>
-
-    
+    <!-- Product Items Dynamically Generate End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-secondary px-5 mt-5">
+    <div class="container-fluid bg-primary text-secondary px-5 mt-5 footer-container">
         <div class="row gx-5">
-            <div class="col-lg-12 col-md-6">
-                <div class="row gx-5">
-                    <div class="col-lg-3 col-md-12 pt-5 mb-5 px-5">
+            <div class="col-lg-12 footer-container-detais-col">
+                <div class="row gx-5 footer-container-detais-row">
+                    <div class="col-lg-3 col-md-12 pt-5 px-5 footer-container-description-col">
                         <img class="w-100 opacity-25 mb-4" src="img/Logo.png" alt="Image">
                         <p class="text-white font-family-Alumni-Sans font-size-1-5rem letter-spacing-medium font-weight-medium line-height-normal">
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
+                            The one-stop-place for all your weighing needs
                         </p>
                     </div>
 
-                    <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5 px-5">
-                        <h1 class="text-uppercase text-light mb-4 font-family-Alumni-Sans">Opening Time</h1>
+                    <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 px-5 footer-container-opening-time-col">
+                        <h1 class="text-uppercase text-light mb-4 font-family-Alumni-Sans">Opening Hours</h1>
                         <div class="d-flex flex-column justify-content-start footer-link footer-link-custom">
-                            <a class="mb-1 font-family-Alumni-Sans text-white">Mon : 07:00am to 09:00 pm</a>
-                            <a class="mb-1 font-family-Alumni-Sans text-white">Mon : 07:00am to 09:00 pm</a>
-                            <a class="mb-1 font-family-Alumni-Sans text-white">Mon : 07:00am to 09:00 pm</a>
-                            <a class="mb-1 font-family-Alumni-Sans text-white">Mon : 07:00am to 09:00 pm</a>
-                            <a class="mb-1 font-family-Alumni-Sans text-white">Mon : 07:00am to 09:00 pm</a>
+                            <a class="mb-1 font-family-Alumni-Sans text-white nohover">Mon : 08:00am to 05:00 pm</a>
+                            <a class="mb-1 font-family-Alumni-Sans text-white nohover">Tue : 08:00am to 05:00 pm</a>
+                            <a class="mb-1 font-family-Alumni-Sans text-white nohover">Wed : 08:00am to 05:00 pm</a>
+                            <a class="mb-1 font-family-Alumni-Sans text-white nohover">Thu : 08:00am to 05:00 pm</a>
+                            <a class="mb-1 font-family-Alumni-Sans text-white nohover">Fri : 08:00am to 05:00 pm</a>
+                            <a class="mb-1 font-family-Alumni-Sans text-white nohover">Sat : 08:00am to 05:00 pm</a>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5 px-5">
+                    <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 px-5 footer-container-useful-pages-col">
                         <h1 class="text-uppercase text-light mb-4 font-family-Alumni-Sans">Useful Pages</h1>
                         <div class="d-flex flex-column justify-content-start footer-link footer-link-custom">
                             <a href="index.html" class="mb-1 font-family-Alumni-Sans">Home</a>
@@ -221,19 +217,19 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12 pt-5 mb-5">
+                    <div class="col-lg-3 col-md-12 pt-5 footer-container-contact-us-col">
                         <h1 class="text-uppercase text-light mb-4">Contact Us</h1>
                         <div class="d-flex mb-2 text-white font-family-Alumni-Sans font-size-1-5rem letter-spacing-medium font-weight-medium line-height-normal">
                             <i class="bi bi-geo-alt text-white me-2"></i>
-                            <p class="mb-0">12/3 Street, Panadura, Sri Lanka</p>
+                            <p class="mb-0">176/1, Colombo Road, Manaweriya, Kochchikade</p>
                         </div>
                         <div class="d-flex mb-2 text-white font-family-Alumni-Sans font-size-1-5rem letter-spacing-medium font-weight-medium line-height-normal">
                             <i class="bi bi-envelope-open text-white me-2"></i>
-                            <p class="mb-0">neat@gmail.com</p>
+                            <p class="mb-0">info@neatscales.lk</p>
                         </div>
                         <div class="d-flex mb-2 text-white font-family-Alumni-Sans font-size-1-5rem letter-spacing-medium font-weight-medium line-height-normal">
                             <i class="bi bi-telephone text-white me-2"></i>
-                            <p class="mb-0">+(94) 095 258 2584</p>
+                            <p class="mb-0">0777 312 949 <br>0777 558 717</p>
                         </div>
                         <div class="d-flex mt-4">
                             <a class="btn btn-secondary  btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -247,11 +243,11 @@
         </div>
     </div>
     <!-- copyright -->
-    <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+    <div class="container-fluid py-4 py-lg-0 px-5 copyright-container" style="background: #111111;">
         <div class="row gx-5">
             <div class="col-lg-12">
                 <div class="py-lg-2 text-center">
-                    <p class="text-secondary mb-0">Copyright &copy; 2023 NEAT. All Rights Reserved | Designed and Developed by <a class="text-light fw-bold" href="#"> INTELLION</a> .</p>
+                    <p class="text-secondary mb-0">Copyright &copy; 2023 NEAT. All Rights Reserved | Designed and Developed by <a class="text-light fw-bold" href="#"> INTELLEON</a> .</p>
                 </div>
             </div>
         </div>
@@ -275,81 +271,1381 @@
 <script>
     var products = [
         {
-            name: "Product Name 1",
-            image: "img/blackbg.jpg",
-            category: "Categories name",
+            name: "IW-AWC",
+            image: "img/IW-AWC.png",
+            category: "Weighing and Counting Scales",
+            description: "High precision A/D conversion with readability 1/30000. AC/DC power supply,with inside rechargeable 6V/4AH battery. Able to setup zero-tracking range. Able to setup Hi-Lo alarm function. Able to setup hold function;Muti-range calibration. Able to setup print function, can add built-in clock. Standard RS232 communication interface with select-able baud rate and communication method.",
             specification: {
                 table: '<table>' +
-                '<tr><th>Weight</th><td>10 kg</td></tr>' +
-                '<tr><th>Price</th><td>$100</td></tr>' +
-                '<tr><th>Height</th><td>20 cm</td></tr>' +
-                '<tr><th>Width</th><td>30 cm</td></tr>' +
-                '</table>'
-            }
+                    '<tr><th>Model</th><td>IW-BWC</td></tr>' +
+               	    '<tr><th>Weighing Units</th><td>Can be set by soft</td></tr>' +
+                    '<tr><th>Display (mm)</th><td>LCD/LED display 6 digits</td></tr>' +
+                    '<tr><th>Weighing pan (mm)</th><td>250 x 180mm/260 x 218mm (304 stainless steel)</td></tr>' +
+               	    '<tr><th>Dimension (mm)</th><td>250 x 300 x 110mm/275 x 310 x 95mm</td></tr>' +
+				    '<tr><th>Weight</th><td>Net weight 3.5kg; Gross weight 4.5kg</td></tr>' +
+				    '<tr><th>Power supply</th><td>AC/DC</td></tr>' +
+				    '<tr><th>Operating Temp</th><td>0°C to +40°C / +32°F to +104°F</td></tr>' +
+                	'</table>'
+            },
         },
         {
-            name: "Product Name 2",
-            image: "img/blackbg.jpg",
-            category: "Categories name",
+            name: "IW-BWC",
+            image: "img/IW-BWC.png",
+            category: "Weighing and Counting Scales",
+            description: "High precision A/D conversion with readability 1/30000. AC/DC power supply,with inside rechargeable 6V/4AH battery. Able to setup zero-tracking range. Able to setup Hi-Lo alarm function. Able to setup hold function;Muti-range calibration. Able to setup print function, can add built-in clock. Standard RS232 communication interface with select-able baud rate and communication method.",
             specification: {
                 table: '<table>' +
-                '<tr><th>Weight</th><td>10 kg</td></tr>' +
-                '<tr><th>Price</th><td>$100</td></tr>' +
-                '<tr><th>Height</th><td>20 cm</td></tr>' +
-                '<tr><th>Width</th><td>30 cm</td></tr>' +
-                '</table>'
-            }
+                    '<tr><th>Model</th><td>IW-BWC</td></tr>' +
+               	    '<tr><th>Weighing Units</th><td>Can be set by soft</td></tr>' +
+                    '<tr><th>Display (mm)</th><td>LCD/LED display 6 digits</td></tr>' +
+                    '<tr><th>Weighing pan (mm)</th><td>250 x 180mm/260 x 218mm (304 stainless steel)</td></tr>' +
+               	    '<tr><th>Dimension (mm)</th><td>250 x 300 x 110mm/275 x 310 x 95mm</td></tr>' +
+				    '<tr><th>Weight</th><td>Net weight 3.5kg; Gross weight 4.5kg</td></tr>' +
+				    '<tr><th>Power supply</th><td>AC/DC</td></tr>' +
+				    '<tr><th>Operating Temp</th><td>0°C to +40°C / +32°F to +104°F</td></tr>' +
+                	'</table>'
+            },
         },
         {
-            name: "Product Name 3",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "IW-AC",
+            image: "img/IW-AC.png",
+            category: "Weighing and Counting Scales",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Model</th><td colspan="4">IW-AC</td></tr>' +
+			        '<tr><th>Capacity (kg)</th><td>3</td><td>6</td><td>15</td><td>30</td></tr>' +
+			        '<tr><th>Division (g)</th><td>0.1</td><td>0.2</td><td>0.5</td><td>1</td></tr>' +
+                    '<tr><th>Weighing Units</th><td colspan="4">Can be set by soft</td></tr>' +
+                    '<tr><th>Display (mm)</th><td colspan="4">LCD/LED display 6 digits</td></tr>' +
+                    '<tr><th>Weighing pan (mm)</th><td colspan="4">260 x 218mm (304 stainless steel)</td></tr>' +
+			        '<tr><th>Dimension (mm)</th><td colspan="4">275 x 310 x 95mm</td></tr>' +
+			        '<tr><th>Weight</th><td colspan="4">Net weight 3.5kg; Gross weight 4.5kg</td></tr>' +
+			        '<tr><th>Power supply</th><td colspan="4">AC/DC</td></tr>' +
+			        '<tr><th>Operating Temp</th><td colspan="4">0°C to +40°C</td></tr>' +
+                	'</table>'
+      		},
         },
         {
-            name: "Product Name 4",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
-        }, 
-        {
-            name: "Product Name 5",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "JL-910A",
+            image: "img/JL-910A.png",
+            category: "Price Computing and Retail Scales",
+            description: "High brightness LED Display. 192 shortcut keys can store 4000 PLU items. Only use PET film keyboard, with service life up to 100000 times. Connect laser scanning gun with RS232 interface. Connection port can be selected to connect the cash box. Continuios paper pringting function, adhesive printing function. Various business reports can be uploaded to the computer for easy query and management. You can set and enter the PLU library and system parameters manually or by computer.",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><td>JL-910A</td></tr>' +
+                    '<tr><th>Display</th><td>LED</td></tr>' +
+                    '<tr><th>Power Supply</th><td>AC and DC power supply</td></tr>' +
+                    '<tr><th>Capacity / Accuracy</th><td>15kg/5g     30kg/5g     40kg/5g</td></tr>' +
+                    '<tr><th>Packing Number</th><td>1 PC/CTN</td></tr>' +
+                    '<tr><th>Package size</th><td>53.5 x 44.5 x 22.5cm</td></tr>' +
+                    '<tr><th>Gross weight</th><td>7kg</td></tr>' +
+                    '<tr><th>Platter size</th><td>37 x 28cm</td></tr>' +
+                    '</table>'
+            },
         },
         {
-            name: "Product Name 6",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "JL-910B",
+            image: "img/JL-910B.png",
+            category: "Price Computing and Retail Scales",
+            description: "High brightness colour LCD Display. 192 shortcut keys can store 4000 PLU items. Only use PET film keyboard, with service life up to 100000 times. Connect laser scanning gun with RS232 interface. Connection port can be selected to connect the cash box. Continuios paper pringting function, adhesive printing function. Various business reports can be uploaded to the computer for easy query and management. You can set and enter the PLU library and system parameters manually or by computer.",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><td>JL-910B</td></tr>' +
+                    '<tr><th>Display</th><td>LCD</td></tr>' +
+                    '<tr><th>Power Supply</th><td>AC and DC power supply</td></tr>' +
+                    '<tr><th>Capacity / Accuracy</th><td>15kg/5g     30kg/5g     40kg/5g</td></tr>' +
+                    '<tr><th>Packing Number</th><td>1 PC/CTN</td></tr>' +
+                    '<tr><th>Package size</th><td>53.5 x 44.5 x 22.5cm</td></tr>' +
+                    '<tr><th>Gross weight</th><td>7kg</td></tr>' +
+                    '<tr><th>Platter size</th><td>37 x 28cm</td></tr>' +
+                    '</table>'
+            },
         },
         {
-            name: "Product Name 7",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "ACS-L2",
+            image: "img/ACS-L2.jpg",
+            category: "Price Computing and Retail Scales",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Cap</th><td>3kg/1g  6kg/2g  15kg/5g  30kg/10g</td></tr>' +
+                    '<tr><th>Packing</th><td>4</td></tr>' +
+                    '<tr><th>Carton Size</th><td>63x45x41cm</td></tr>' +
+                    '<tr><th>Plate Size</th><td>34x23.5cm</td></tr>' +
+                    '<tr><th>Product Size</th><td>35x33x47cm</td></tr>' +
+                    '</table>'
+            },
         },
         {
-            name: "Product Name 8",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "ACS-C",
+            image: "img/ACS-C.jpg",
+            category: "Price Computing and Retail Scales",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Cap</th><td>3kg/1g  6kg/2g  15kg/5g  30kg/10g</td></tr>' +
+                    '<tr><th>Packing</th><td>4</td></tr>' +
+                    '<tr><th>Carton Size</th><td>56x39x38cm</td></tr>' +
+                    '<tr><th>Plate Size</th><td>34x23.5cm</td></tr>' +
+                    '<tr><th>Product Size</th><td>35.5x33.5x12cm</td></tr>' +
+                    '<tr><th>Display</th><td>LCD/LED</td></tr>' +
+                    '<tr><th>Power</th><td>AC/DC</td></tr>' +
+                    '</table>'
+            },
         },
         {
-            name: "Product Name 9",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "IW-BP",
+            image: "img/IW-BP.png",
+            category: "Price Computing and Retail Scales",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><td colspan="4">IW-BP</td></tr>' +
+                    '<tr><th>Capacity (kg)</th><td>3</td><td>6</td><td>15</td><td>30</td></tr>' +
+                    '<tr><th>Division (g)</th><td>0.5</td><td>1</td><td>2</td><td>5</td></tr>' +
+                    '<tr><th>Weighing Units</th><td colspan="4">Can be set by soft</td></tr>' +
+                    '<tr><th>Display (mm)</th><td colspan="4">LCD/LED display 6 digits</td></tr>' +
+                    '<tr><th>Weighing pan (mm)</th><td colspan="4">250 x 180mm(304 stainless steel)</td></tr>' +
+                    '<tr><th>Dimension (mm)</th><td colspan="4">250 x 300 x 110mm</td></tr>' +
+                    '<tr><th>Weight</th><td colspan="4">Net weight 3.5kg; Gross weight 4.5kg</td></tr>' +
+                    '<tr><th>Power supply</th><td colspan="4">AC/DC</td></tr>' +
+                    '<tr><th>Operating Temp</th><td colspan="4">0°C to +40°C / +32°F to +104°F</td></tr>' +
+                    '</table>'
+            },
         },
         {
-            name: "Product Name 10",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "IW-CP",
+            image: "img/IW-CP.png",
+            category: "Price Computing and Retail Scales",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><td colspan="4">IW-CP</td></tr>' +
+                    '<tr><th>Capacity (kg)</th><td>3</td><td>6</td><td>15</td><td>30</td></tr>' +
+                    '<tr><th>Division (g)</th><td>0.5</td><td>1</td><td>2</td><td>5</td></tr>' +
+                    '<tr><th>Weighing Units</th><td colspan="4">Can be set by soft</td></tr>' +
+                    '<tr><th>Display (mm)</th><td colspan="4">LCD display 6 digits(green/blue/white back light); LED(green/blue/red) display 7 digits</td></tr>' +
+                    '<tr><th>Weighing pan (mm)</th><td colspan="4">260 x 218mm (304 stainless steel)</td></tr>' +
+                    '<tr><th>Dimension (mm)</th><td colspan="4">260 x 300 x 430mm</td></tr>' +
+                    '<tr><th>Weight</th><td colspan="4">Net weight 3.5kg; Gross weight 4.5kg</td></tr>' +
+                    '<tr><th>Power supply</th><td colspan="4">AC/DC</td></tr>' +
+                    '<tr><th>Operating Temp</th><td colspan="4">0°C to +40°C / +32°F to +104°F</td></tr>' +
+                    '</table>'
+            },
         },
         {
-            name: "Product Name 11",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "TCS-YH618",
+            image: "img/TCS-YH618.png",
+            category: "Platform and Floor Scales",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><td>TCS-YH618</td></tr>' +
+                    '<tr><th>Material</th><td>Alloy plastic ++ SS pan</td></tr>' +
+                    '<tr><th>Power</th><td>AC/DC</td></tr>' +
+                    '<tr><th>Unit</th><td>kg/lb</td></tr>' +
+                    '<tr><th>Battery</th><td>4V/4A rechargable battey</td></tr>' +
+                    '<tr><th>Capacity</th><td>60kg/5g, 100kg,10g</td></tr>' +
+                    '<tr><th>Scale size</th><td>30x34x41cm</td></tr>' +
+                    '<tr><th>Display</th><td>LED/LCD</td></tr>' +
+                    '<tr><th>Packing</th><td>1 pcs/ctn</td></tr>' +
+                    '<tr><th>Dimension</th><td>57x34x16cm</td></tr>' +
+                    '<tr><th>Weight</th><td>7kg gross weight, 6kg net weight</td></tr>' +
+                    '</table>'
+            },
+
         },
         {
-            name: "Product Name 12",
-            image: "img/blackbg.jpg",
-            category: "Categories name"
+            name: "TCS-YH518F",
+            image: "img/TCS-YH518.png",
+            category: "Platform and Floor Scales",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><td>TCS-YH518F</td></tr>' +
+                    '<tr><th>Material</th><td>Iron and steel</td></tr>' +
+                    '<tr><th>Power</th><td>AC/DC 110V~240V</td></tr>' +
+                    '<tr><th>Unit</th><td>kg/lb</td></tr>' +
+                    '<tr><th>Battery</th><td>4V/4A lead-acid battey</td></tr>' +
+                    '<tr><th>Display</th><td>LED/LCD</td></tr>' +
+                    '<tr><th>Packing</th><td>1 pcs/ctn</td></tr>' +
+                    '</table>'
+            },
+            specification: {
+                table: '<table>' +
+                    '<tr><th>Scale Size</th><th>Packing Size</th><th>Capacity</th><th>G.W./N.W.</th></tr>' +
+                    '<tr><td>32x42x75cm (S)</td><td>69x34x16cm</td><td>150kg/20g, 200kg/30g</td><td>8kg/7.5kg</td></tr>' +
+                    '<tr><td>42x52x88cm (L)</td><td>79x44x18cm</td><td>300kg/100g, 400kg/100g</td><td>13kg/12kg</td></tr>' +
+                    '</table>'
+            },
+
         },
+        {
+            name: "TCS-YH918",
+            image: "img/TCS-YH918.png",
+            category: "Platform and Floor Scales",
+            descriptionTable: {
+      		   table: '<table>' +
+               		'<tr><th>Model</th><td>TCS-YH518F</td></tr>' +
+                	'<tr><th>Material</th><td>Iron and steel</td></tr>' +
+               		'<tr><th>Power</th><td>AC/DC 110V~240V</td></tr>' +
+              		'<tr><th>Unit</th><td>kg/lb</td></tr>' +
+			        '<tr><th>Battery</th><td>4V/4A lead-acid battey</td></tr>' +
+			        '<tr><th>Display</th><td>LED/LCD</td></tr>' +
+			        '<tr><th>Packing</th><td>1 pcs/ctn</td></tr>' +
+		            '</table>'
+      	    },
+            specification: {
+     		    table: '<table>' +
+                	'<tr><th>Scale Size</th><th>Packing Size</th><th>Capacity</th><th>G.W./N.W.</th></tr>' +
+                	'<tr><td>32x42x75cm (S)</td><td>69x34x16cm</td><td>150kg/20g, 200kg/30g</td><td>8kg/7.5kg</td></tr>' +
+               		'<tr><td>42x52x88cm (L)</td><td>79x44x18cm</td><td>300kg/100g, 400kg/100g</td><td>13kg/12kg</td></tr>' +
+          	        '</table>'
+ 	        },
+        },
+        {
+            name: "TCS (Stainless Steel)",
+            image: "img/TCS (Stainless Steel).png",
+            category: "Platform and Floor Scales",
+            description: "Stainless steel 304 frame Removable stainless steel 304 plate for easy cleaning High precision load cell Quick indicator connector, and various indicators with RS-232 output are optional Four adjustable water free stainless steel 304 feet Stainless steel 304 pole with indicator fixture",
+            specification: {
+                table: '<table>' +
+                    '<tr><th>Model-Pan size (mm)</th><th>Tube size (mm)</th><th>Platter & Thickness</th><th>Max Capacity</th><th>Division</th></tr>' +
+                    '<tr><td>TCS-300x400</td><td>25x25x1.2</td><td>S.S 201 1.0mm</td><td>150kg</td><td>20g</td></tr>' +
+                    '<tr><td>TCS-400x400</td><td>30x30x1.2</td><td>S.S 201 1.0mm</td><td>150kg</td><td>20g</td></tr>' +
+                    '<tr><td>TCS-400x500</td><td>30x30x1.2</td><td>S.S 201 1.0mm</td><td>200kg</td><td>50g</td></tr>' +
+                    '<tr><td>TCS-500x500</td><td>40x40x2.0</td><td>S.S 201 1.2mm</td><td>300kg</td><td>50g</td></tr>' +
+                    '<tr><td>TCS-450x600</td><td>40x40x2.0</td><td>S.S 201 1.2mm</td><td>300kg</td><td>50g</td></tr>' +
+                    '<tr><td>TCS-500x600</td><td>40x40x2.0</td><td>S.S 201 1.2mm</td><td>500kg</td><td>100g</td></tr>' +
+                    '<tr><td>TCS-600x600</td><td>40x40x2.0</td><td>S.S 201 1.2mm</td><td>500kg</td><td>100g</td></tr>' +
+                    '<tr><td>TCS-600x800</td><td>40x40x2.0</td><td>S.S 201 1.2mm</td><td>600kg</td><td>100g</td></tr>' +
+                    '</table>'
+            },
+        },
+        {
+            name: "TCS (Mild Steel)",
+            image: "img/TCS (Mild Steel).png",
+            category: "Platform and Floor Scales",
+            description: "Mild steel welding structure The top plate is made of plain plate or checker plate Blue colour power coated painting Weighing capacities ranging from 100kg-5000kg High precision Mavin/Zemic/Keli load cell Quick indicator connector, optional RS-232C data interface provides the ideal basis for communication",
+            specification: {
+     		    table: '<table>' +
+                    '<tr><th>Model-Pan size (mm)</th><th>Max Capacity</th><th>Division</th><th>Top plate/U beam support thickness</th></tr>' +
+                	'<tr><td>TCS-800x800</td><td>1000kg</td><td>200g</td><td>4mm/2mm</td></tr>' +
+               		'<tr><td>TCS-1000x1000</td><td>2000kg</td><td>500g</td><td>4mm/2mm</td></tr>' +
+              		'<tr><td>TCS-1200x1200</td><td>3000kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1200x1500</td><td>3000kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1500x1500</td><td>5000kg</td><td>1kg</td><td>5mm/3mm</td></tr>' +
+                    '<tr><td>TCS-1500x2000</td><td>5000kg</td><td>1kg</td><td>5mm/2mm</td></tr>' +
+          	        '</table>'
+ 	       },
+        },
+        {
+            name: "TCS Stainless Steel Floor Scale",
+            image: "img/TCS (Stainless steel Floor Scale).png",
+            category: "Platform and Floor Scales",
+            description: "Totally stainless steel 304 waterproof platform Compact structure with beautiful appearance, and easy to clean Both plain plate or checkered plate are available Weighing capacities ranging from 100kg-5000kg High precision Mavin/Zemic/Keli load cell / stainless steel load cell Quick indicator connector, optional RS-232C data interface provides the ideal basis for communication",
+            specification: {
+     		    table: '<table>' +
+                	'<tr><th>Model-Pan size (mm)</th><th>Max Capacity</th><th>Division</th><th>Top plate/U beam support thickness</th></tr>' +
+                	'<tr><td>TCS-800x800</td><td>1000kg</td><td>200g</td><td>4mm/2mm</td></tr>' +
+               		'<tr><td>TCS-1000x1000</td><td>2000kg</td><td>500g</td><td>4mm/2mm</td></tr>' +
+              		'<tr><td>TCS-1200x1200</td><td>3000kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1200x1500</td><td>3000kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1500x1500</td><td>5000kg</td><td>1kg</td><td>5mm/3mm</td></tr>' +
+                    '<tr><td>TCS-1500x2000</td><td>5000kg</td><td>1kg</td><td>5mm/3mm</td></tr>' +
+                    '</table>'
+ 	       },
+        },
+        { 
+            name: "TCS Washable stainless steel floor scale",
+            image: "img/TCS (Washable stainless steel floor scale).png",
+            category: "Platform and Floor Scales",
+            description: "Totally stainless steel 304 U-shape structure Washown 4 load cells construction High precision Keli/Zemic stainless steel load cell STable stainless steel junnection box Weighing capacities ranging from 100kg-3000kg High precision Mavin/Zemic/Keli load cell / stainless steel load cell Quick indicator connector, optional RS-232C data interface provides the ideal basis for communication",
+            specification: {
+     		    table: '<table>' +
+                	'<tr><th>Model-Pan size (mm)</th><th>Max Capacity</th><th>Division</th><th>Top plate/U beam support thickness</th></tr>' +
+                	'<tr><td>TCS-800x800</td><td>1000kg</td><td>200g</td><td>4mm/2mm</td></tr>' +
+               		'<tr><td>TCS-1000x1000</td><td>1000kg</td><td>500g</td><td>4mm/2mm</td></tr>' +
+              		'<tr><td>TCS-1000x1200</td><td>1500kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1200x1200</td><td>1500kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1200x1500</td><td>2000kg</td><td>500g</td><td>5mm/2mm</td></tr>' +
+                    '<tr><td>TCS-1500x1500</td><td>2500kg</td><td>500g</td><td>5mm/3mm</td></tr>' +
+          	        '</table>'
+ 	        },
+        },
+        {
+            name: "WT-CH Precision Balnce",
+            image: "img/WT-CH Precision Balance.png",
+            category: "Analytical, Density and Moisture Scales",
+            description: "Glass removable door. Bigger space. Linearity calibration.",
+            descriptionTable: {
+      	        table: '<table>' +
+               	    '<tr><th>Model</th><th>Parameter</th><th>Remarks</th></tr>' +
+               	    '<tr><td>WT606CH</td><td>60g/1mg</td><td rowspan="5">Load cell sensor; RS232/RS232,RS485 or USB; Good performance, low failure rate; SST pan: 80mm or 130mm</tr>' +
+               	    '<tr><td>WT1003CH</td><td>100g/1mg</td></tr>' +
+               	    '<tr><td>WT2003CH</td><td>200g/1mg</td></tr>' +
+			        '<tr><td>WT3003CH</td><td>300g/1mg</td></tr>' +
+			        '<tr><td>WT5003CH</td><td>500g/1mg</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "WT-CF Electronic Balnce",
+            image: "img/WT-CF Electronic Balance.png",
+            category: "Analytical, Density and Moisture Scales",
+            description: "Steel deep drawing metal base, stable and reliable performance. Has count, percentage, dynamic weighing, multiple unit conversion, 10-point linear calibration.",
+            descriptionTable: {
+                table: '<table>' +
+                    '<tr><th>Model</th><th>Parameter</th><th>Remarks</th></tr>' +
+                    '<tr><td>WT10002CF</td><td>1000g/0.01g</td><td rowspan="5">Double pan: SST+ABS; SST pan: 16cm; RS232,RS485 or USB; Rechargeable battery: 50RMB; Outline: 33x21x10cm</tr>' +
+                    '<tr><td>WT20002CF</td><td>2000g/0.01g</td></tr>' +
+                    '<tr><td>WT30002CF</td><td>3000g/0.01g</td></tr>' +
+                    '<tr><td>WT40002CF</td><td>4000g/0.01g</td></tr>' +
+                    '<tr><td>WT50002CF</td><td>5000g/0.01g</td></tr>' +
+                    '</table>'
+            },
+        },
+        {
+            name: "MB Series Moisture Analyzer",
+            image: "img/MB Series Moisture Analyzer.png",
+            category: "Analytical, Density and Moisture Scales",
+            description: "For rapid determination of free water chemicals, grain, mineral, biological products, food, pharmaceutical raw materials, paper, textile raw materials and other types of samples.",
+            descriptionTable: {
+      	        table: '<table>' +
+               	    '<tr><th>Model</th><th>Parameter</th><th>Remarks</th></tr>' +
+               	    '<tr><td>MB1203</td><td>120g/1mg</td><td rowspan="3">Halogen heating; Max temperature 160 degree; Outline: 35x21x17cm</td></tr>' +
+               	    '<tr><td>MB1203-5</td><td>120g/5mg</td></tr>' +
+               	    '<tr><td>MB1202</td><td>120g/10mg</td></tr>' +
+		            '</table>'
+      	    },
+        },
+        {
+            name: "JL Series",
+            image: "img/JL Series.png",
+            category: "Analytical, Density and Moisture Scales",
+            description: "Test type: gold, platinum, K gold, alloy and other precious metals; Test time: about 5 seconds; Display value density, volume, purity, K value; Temperature compensation: The temperature of the solution can be set to 0~100C; Solution compensation: The solution can be set to 19.999",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Model</th><th>Weighing Range</th><th>Weighing Accuracy</th><th>Density Accuracy</th></tr>' +
+               	    '<tr><td>JL3002GD</td><td>0.01-300g</td><td>0.01g</td><td>0.001g/cm3</td></tr>' +
+               	    '<tr><td>JL6002GD</td><td>0.01-600g</td><td>0.01g</td><td>0.001g/cm3</td></tr>' +
+			        '<tr><td>JL3005GD</td><td>0.005-300g</td><td>0.005g</td><td>0.001g/cm3</td></tr>' +
+               	    '<tr><td>JL1203GD</td><td>0.001-120g</td><td>0.001g</td><td>0.001g/cm3</td></tr>' +
+		            '</table>'
+      	    },
+        },
+        {
+            name: "14192-701E",
+            image: "img/14192-701E.png",
+            category: "Hanging & Cranes Scales",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Max Cap</th><td>2t</td><td>3t</td><td>5t</td><td>10t</td><td>15t</td><td>20t</td></tr>' +
+               	    '<tr><th>Scale Size (cm)</th><td colspan="6">32x23x15</td></tr>' +
+               	    '<tr><th>Cbm/ctn</th><td colspan="2">0.03</td><td colspan="2">0.07</td><td colspan="2">0.15</td></tr>' +
+               	    '<tr><th>N.W. (kg)</th><td colspan="2">11.5</td><td>18</td><td>28</td><td>&nbsp</td><td>66</td></tr>' +
+			        '<tr><th>G.W. (kg)</th><td colspan="2">12.8</td><td>19.4</td><td>29.1</td><td>&nbsp </td><td>58</td></tr>' +
+		 	        '<tr><th>PCS/CTN</th><td colspan="6">1</td></tr>' +
+                    '</table>'
+            },
+        },
+        {
+            name: "14192-54",
+            image: "img/14192-54.png",
+            category: "Hanging & Cranes Scales",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Max Cap</th><td>300kg</td></tr>' +
+               	    '<tr><th>Dimensions</th><td>14.3x10x6.7cm</td></tr>' +
+               	    '<tr><th>Package size</th><td>31.5x20.3x12.6cm</td></tr>' +
+               	    '<tr><th>Packing volume</th><td>43x40x36cm</td></tr>' +
+			        '<tr><th>N.W./G.W.</th><td>7.6kg/9.6kg</td></tr>' +
+		 	        '<tr><th>PCS/CTN</th><td>6</td></tr>' +
+			        '<tr><th>Cbm/Ctn</th><td>0.06</td></tr>' +
+                    '</table>'
+      		},
+        },
+        {
+            name: "14192-740E",
+            image: "img/14192-740E.png",
+            category: "Hanging & Cranes Scales",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Max Cap</th><td>500kg/1000kg</td></tr>' +
+               	    '<tr><th>Dimensions of the scale</th><td>14.5x7x4cm</td></tr>' +
+               	    '<tr><th>Dimensions of colour box</th><td>20.6x17x8.6cm</td></tr>' +
+               	    '<tr><th>Packing volume</th><td>40x40x30cm</td></tr>' +
+			        '<tr><th>N.W./G.W.</th><td>19kg/21kg</td></tr>' +
+		 	        '<tr><th>PCS/CTN</th><td>10</td></tr>' +
+			        '<tr><th>Cbm/Ctn</th><td>0.05</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "14192-754F",
+            image: "img/14192-754F.png",
+            category: "Hanging & Cranes Scales",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Max Cap</th><td>100kg/200kg/300kg</td></tr>' +
+               	    '<tr><th>Dimensions of the scale</th><td>13.5x8x4.7cm</td></tr>' +
+               	    '<tr><th>Package size</th><td>18.5x17.8x5.2cm</td></tr>' +
+               	    '<tr><th>Packing volume</th><td>40x40x30cm</td></tr>' +
+			        '<tr><th>N.W./G.W.</th><td>13kg/16kg</td></tr>' +
+		 	        '<tr><th>PCS/CTN</th><td>20</td></tr>' +
+			        '<tr><th>Cbm/Ctn</th><td>0.05</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "14192-178E",
+            image: "img/14192-178E.png",
+            category: "Hanging & Cranes Scales",
+            descriptionTable: {
+                table: '<table>' +
+               	    '<tr><th>Max Cap</th><td>500kg/1000kg</td></tr>' +
+               	    '<tr><th>Dimensions of the scale</th><td>20x11.5x11.4cm</td></tr>' +
+               	    '<tr><th>Package size</th><td>57.5x32x37.2cm</td></tr>' +
+               	    '<tr><th>Packing volume</th><td>57.5x45x32cm</td></tr>' +
+			        '<tr><th>N.W./G.W.</th><td>20kg/22kg</td></tr>' +
+		 	        '<tr><th>PCS/CTN</th><td>4</td></tr>' +
+			        '<tr><th>Cbm/Ctn</th><td>0.08</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "14191-749E",
+            image: "img/14191-749E.png",
+            category: "Hanging & Cranes Scales",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Max Cap</th><td>200kg</td></tr>' +
+               	    '<tr><th>Plated flat plate</th><td>19x7.8x3cm</td></tr>' +
+               	    '<tr><th>Dimensions of the scale</th><td>24.6x12.3x4.8cm</td></tr>' +
+               	    '<tr><th>Packing volume</th><td>51.5x39x26.5cm</td></tr>' +
+			        '<tr><th>N.W./G.W.</th><td>13.5kg/15kg</td></tr>' +
+		 	        '<tr><th>PCS/CTN</th><td>30</td></tr>' +
+			        '<tr><th>Cbm/Ctn</th><td>0.05</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "OCS-A92",
+            image: "img/OCS-A92.png",
+            category: "Hanging & Cranes Scales",
+            description: "Iron + Strong alloy aluminum body. Optional display interval. Overload alarm-. Anti-motion. Sleep/auto power-off. Display hold. Rotatable hook and shackle.Tare set, tare in/out Accumlation. Patent of loadcell and appearance. 10 pcs/ctn. With or without remote controller.",
+            descriptionTable: {
+      		    table: '<table>' +
+                    '<tr><th>Product Size</th><td>147x223x600mm</td></tr>' +
+               	    '<tr><th>Capacity</th><td>500kg/1000kg</td></tr>' +
+               	    '<tr><th>Division</th><td>150g</td></tr>' +
+               	    '<tr><th>Unit</th><td>kg/lb</td></tr>' +
+			        '<tr><th>Color</th><td>Orange, Black, Blue</td></tr>' +
+		 	        '<tr><th>Power</th><td>AC power supply:200v/50-60HZx6V DC/1.3AH</td></tr>' +
+			        '<tr><th>Size/Ctn</th><td>550x290x380mm</td></tr>' +
+			        '<tr><th>N.W./G.W.</th><td>10.5kg/12.5kg</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "ACS-F",
+            image: "img/ACS-F.jpg",
+            category: "Waterproof Scales",
+            description: "LED; AC/DC; IPX8",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Cap</th><td>3kg/1g 6kg/2g 15kg/5g 30kg/10g</td></tr>' +
+               	    '<tr><th>Packing</th><td>4</td></tr>' +
+               	    '<tr><th>Carton size</th><td>57x47.5x31cm</td></tr>' +
+               	    '<tr><th>Plate size</th><td>22.4x17.5cm</td></tr>' +
+			        '<tr><th>Product size</th><td>24.5x24.5x15cm</td></tr>' +
+		 	        '</table>'
+      	    },
+        },
+        {
+            name: "ACS-F1",
+            image: "img/ACS-F1.jpg",
+            category: "Waterproof Scales",
+            description: "LED; AC/DC; IPX8",
+            descriptionTable: {
+      		    table: '<table>' +
+                    '<tr><th>Cap</th><td>3kg/1g 6kg/2g 15kg/5g</td></tr>' +
+               	    '<tr><th>Packing</th><td>4</td></tr>' +
+               	    '<tr><th>Carton size</th><td>60x31.5x28cm</td></tr>' +
+               	    '<tr><th>Plate size</th><td>24x18cm</td></tr>' +
+			        '<tr><th>Product size</th><td>25.5x30x13cm</td></tr>' +
+		 	        '</table>'
+      	    },
+        },
+        {
+            name: "FSS Series",
+            image: "img/FSS Series.png",
+            category: "Waterproof Scales",
+            description: "Stainless steel housing, easy to clean; Bright green LED display; 4 adjustable feet; High accuracy up to 1/15,000 divisions; Battery voltage indication; Perfect for weighing seafood, meat, chemicals and other materials; Optional RS232 output.",
+            descriptionTable: {
+     		    table: '<table>' +
+                    '<tr><th>Model</th><th>Part No.</th><th>Capacity</th><th>Division</th></tr>' +
+                    '<tr><td>FSS3</td><td>640207</td><td>3kg</td><td>0.2g</td></tr>' +
+               	    '<tr><td>FSS6</td><td>640208</td><td>6kg</td><td>0.5g</td></tr>' +
+              	    '<tr><td>FSS15</td><td>640209</td><td>15kg</td><td>1g</td></tr>' +
+			        '<tr><td>FSS30</td><td>640210</td><td>30kg</td><td>2g</td></tr>' +
+          	    '</table>'
+            },
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Power</th><td>100/110V or 220/240V Power Adaptor; 6V4Ah Rechargeable Battery</td></tr>' +
+               	    '<tr><th>Housing</th><td>SUS304 stainless steel</td></tr>' +
+               	    '<tr><th>Display</th><td>0.8 green LED</td></tr>' +
+               	    '<tr><th>Protection</th><td>IP68</td></tr>' +
+                    '<tr><th>Capacity</th><td>3/6/15/30 kg</td></tr>' +
+                    '<tr><th>Division</th><td>0.2/0.5/1/2 g</td></tr>' +
+                    '<tr><th>Units</th><td>kg, lb, lb.oz</td></tr>' +
+                    '<tr><th>Accuracy</th><td>Class III</td></tr>' +
+                    '<tr><th>Pan Size</th><td>240x180cm</td></tr>' +
+                    '<tr><th>Pack Size</th><td>580x330x320mm (4pcs)</td></tr>' +
+                    '<tr><th>Weight</th><td>14kg (4pcs)</td></tr>' +
+                    '<tr><th>Operating Temperature</th><td>-10 ºC - 40 ºC</td></tr>' +
+                    '</table>'
+      		},
+            specificationDescription:"Functions: Zero/Tare, Counting, Checkweigh, Adjustable Weighing speed",
+        },
+        {
+            name: "WSS Series",
+            image: "img/WSS Series.png",
+            category: "Waterproof Scales",
+            description: "Stainless steel housing, easy to clean; Double red LED display; 4 adjustable feet; High accuracy up to 1/15,000 divisions; Battery voltage indication; Perfect for weighing seafood, meat, chemicals and other materials.",
+            descriptionTable: {
+     		    table: '<table>' +
+                    '<tr><th>Model</th><th>Part No.</th><th>Capacity</th><th>Division</th></tr>' +
+                    '<tr><td>WSS3</td><td>640211</td><td>3kg</td><td>0.2g</td></tr>' +
+                    '<tr><td>WSS6</td><td>640212</td><td>6kg</td><td>0.5g</td></tr>' +
+                    '<tr><td>WSS15</td><td>640213</td><td>15kg</td><td>1g</td></tr>' +
+			        '<tr><td>WSS30</td><td>640214</td><td>30kg</td><td>2g</td></tr>' +
+          	        '</table>'
+ 	        },
+            specification: {
+                table: '<table>' +
+               	    '<tr><th>Power</th><td>110V or 220V AC; 6V4Ah Rechargeable Battery</td></tr>' +
+               	    '<tr><th>Housing</th><td>SUS304 stainless steel</td></tr>' +
+               	    '<tr><th>Display</th><td>0.8 red LED</td></tr>' +
+               	    '<tr><th>Protection</th><td>IP68</td></tr>' +
+                    '<tr><th>Capacity</th><td>3/6/15/30 kg</td></tr>' +
+                    '<tr><th>Division</th><td>0.2/0.5/1/2 g</td></tr>' +
+                    '<tr><th>Units</th><td>kg/lb/g/oz/pcs</td></tr>' +
+                    '<tr><th>Accuracy</th><td>Class III</td></tr>' +
+                    '<tr><th>Pan Size</th><td>230x190mm</td></tr>' +
+                    '<tr><th>Pack Size</th><td>340x270x150mm (1pcs)</td></tr>' +
+                    '<tr><th>Weight</th><td>4.2kg (1pcs)</td></tr>' +
+                    '<tr><th>Operating Temperature</th><td>-5 ºC - 35 ºC</td></tr>' +
+                    '</table>'
+      	    },
+            specificationDescription:"Functions: Counting, Checkweigh, Animal weighing, Adjustable read division, Power saving, Auto zero",
+        },
+        {
+            name: "IWWB1100",
+            image: "img/IWWB1100.png",
+            category: "Weighbridges and Weighpads",
+            description: "Structural Features: 8-20MM checker plate steel plate; Composed of 6or 8 U beams and C channel beams,robust and rigid; Middle dissected, with bolts connection; High precision shear beam or compressure load cell; Anti rust and anti corrosion painting; Can be matched with various indicators; Pit & Pit-less mounted alternatively. Print interface: Standard parallel output interface; Built-in micro-printer(A9+P); Data storage - 1000 truck records consisting of truck ID and corresponding tare weight 201cargo ID.1001 weighting records; Power supply - AC 220V(-15%-+10%); 50Hz(-2%-+2%) DC 6V/10Ah External battery rechargeable",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><td>A/D conversion method</td><td>Σ-Δ</td></tr>' +
+                    '<tr><td>Input signal range</td><td>-16mV~18mV</td></tr>' +
+               	    '<tr><td>A/D conversion code</td><td>1 million code</td></tr>' +
+               	    '<tr><td>Load cell excitation</td><td>DC 5V</td></tr>' +
+                    '<tr><td>Max. connection number of load cell</td><td>8 at 350 ohm/16 at 700 ohm</td></tr>' +
+                    '<tr><td>Load cell connection mode</td><td>6 wire, auto compensation for long distance</td></tr>' +
+                    '<tr><td>Division</td><td1/2/5/10/20/50/100 optional</td></tr>' +
+                    '<tr><td>Clock</td><td>Real clock without effect when power off</td></tr>' +
+                    '<tr><td>Transmission</td><td>Current loop/RS 232 signal</td></tr>' +
+                    '<tr><td>Baud rate</td><td>600</td></tr>' +
+                    '<tr><td>Transmission distance</td><td>≤30 meters</td></tr>' +
+                    '<tr><td>Serial communication</td><td>Interface</td></tr>' +
+                    '<tr><td>Transmission method</td><td>RS232/RS422 (optional)/RS485 (optional)</td></tr>' +
+                    '<tr><td>Baund rate</td><td>600/1200/2400/4800/9600 (optional)</td></tr>' +
+                    '<tr><td>Transmission distance</td><td>RS232:≤30 meters; RS422/RS485:≤1200 meters</td></tr>' +
+                    '</table>'
+      	    },
+            specification: {
+     		    table: '<table>' +
+                    '<tr><th>Model</th><th>Size (m)</th><th>Max Capacity (ton)</th><th>Division Value (kg)</th><th>Qty. of Section</th><th>No. of load cells (pcs)</th></tr>' +
+                    '<tr><td>IWWB11003-6</td><td>3x6</td><td>20-60</td><td>10</td><td>1</td><td>4</td></tr>' +
+                    '<tr><td>IWWB11003-7</td><td>3x7</td><td>20-60</td><td>10</td><td>2</td><td>6</td></tr>' +
+                    '<tr><td>IWWB11003-9</td><td>3x9</td><td>30-60</td><td>20</td><td>2</td><td>6</td></tr>' +
+                    '<tr><td>IWWB11003-12</td><td>3x12</td><td>30-80</td><td>20</td><td>2 or 3</td><td>6 or 8</td></tr>' +
+                    '<tr><td>IWWB11003-15</td><td>3x15</td><td>50-100</td><td>20-50</td><td>3</td><td>8</td></tr>' +
+                    '<tr><td>IWWB11003-16</td><td>3x16</td><td>50-120</td><td>20-50</td><td>3</td><td>8</td></tr>' +
+                    '<tr><td>IWWB11003-18</td><td>3x18</td><td>60-150</td><td>20-50</td><td>3 or 4</td><td>8 or 10</td></tr>' +
+                    '<tr><td>IWWB11003-20</td><td>3x20</td><td>60-200</td><td>20-50</td><td>4</td><td>10</td></tr>' +
+                    '<tr><td>IWWB11003.4-16</td><td>3.4x16</td><td>60-150</td><td>20-50</td><td>3</td><td>8</td></tr>' +
+                    '<tr><td>IWWB11003.4-18</td><td>3.4x18</td><td>60-200</td><td>20-50</td><td>3 or 4</td><td>8 or 10</td></tr>' +
+                    '<tr><td>IWWB11003.4-20</td><td>3.4x20</td><td>60-200</td><td>20-50</td><td>4</td><td>10</td></tr>' +
+                    '<tr><td>IWWB11003.4-24</td><td>3.4x24</td><td>60-200</td><td>20-50</td><td>4 or 5</td><td>10 or 12</td></tr>' +
+          	        '</table>'
+ 	        },
+            specificationDescription:"Product Function: AC/DC power supply, standard chargeable battery; 7-bits 0.8 inch LED display, 3-level battery indications; Able to setup zero-tracking range, zero(auto/manual) range; With 2-point calibration correction function, 2 compensation calibration methods; Able to save 1001 weighing records, 1000 truck records consisting of truck ID and corresponding tare weight, 201 records of goods; Able to print across and upright weighing bill; Able to print different statistical reports; Standard RS232 communication interface (RS422/RS485 optional); Standard scoreboard interface with current loop; Standard parallel print interface; Able to connect assigned thermal printer; XK3190-A9+P with built in printer",
+        },
+        {
+            name: "LAK-B",
+            image: "img/LAK-B.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for electronic balances,counting scales etc.; Max.platform size: 150×150mm",
+            specification: {
+                table: '<table>' +
+                    '<tr><th>Rated Capacity</th><td>0.3,0.6,1,1.5,3 (kg)</td></tr>' +
+                    '<tr><th>Accuracy Class</th><td>B *</td></tr>' +
+                    '<tr><th>Rated Output</th><td>1.0±10%mV/V</td></tr>' +
+                    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 2 Min.</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø4mm×0.25m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+            },
+        },
+        {
+            name: "LAK-E",
+            image: "img/LAK-E.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for electronic balances,counting scales etc.; Max.platform size: 150×150mm",
+            specification: {
+      		    table: '<table>' +
+                    '<tr><th>Rated Capacity</th><td>0.3,0.5,1,2,3 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B *</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>1.3±10%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 2 Min.</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø4mm×0.25m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      		},
+        },
+        {
+            name: "LAB-B3",
+            image: "img/LAB-B3.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; High accuracy，OIML R60 approved; Mainly used for price computing scales, counting scales, weighing scales etc.; Max.platform size: 250x350mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>3,6,10,15,20,30,40,50 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G *</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±10%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø4mm×0.4m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAB-B-B",
+            image: "img/LAB-B-B.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Cost-effective; Mainly used for price computing scales, counting scales, weighing scales etc.; Max.platform size: 250x350mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>3,6,10,15,20,30,40,50 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±10%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø4mm×0.4m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAB-C6A",
+            image: "img/LAB-C6A.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Cost-effective; Mainly used for price computing scales, counting scales, weighing scales etc.; Max.platform size: 250x350mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>3,6,10,15,20,30,40 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±10%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>1130±20Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>1000±10Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø4mm×0.4m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAE-A",
+            image: "img/LAE-A.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; High accuracy，OIML R60 approved.; Mainly used for price computing scales, counting scales, platform scales etc.; Max.platform size: 400x400mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>25,40,60,100,200,350 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×1.5m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+            },
+        },
+        {
+            name: "LAE-C",
+            image: "img/LAE-C.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for price computing scales, counting scales, platform scales etc.; Max.platform size: 400x400mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>25,40,60,100,200 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×1.5m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAE-D",
+            image: "img/LAE-D.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for price computing scales, counting scales, platform scales etc.; Max.platform size: 400x500mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>60,100,200,350,500 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×1.5m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAD-A",
+            image: "img/LAD-A.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; High accuracy， OIML R60 approved; Mainly used for price computing scales, counting scales, platform scales etc.; Max.platform size: 800x800mm",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>60,100,200,300,500,600,800,1000 (kg) (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×2m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+            },
+        },
+        {
+            name: "LAG-A",
+            image: "img/LAG-A.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Output adjustment for parallel using; Mainly used for platform scales, floor scales etc.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>100,150,200,300,500 （kg）</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±0.25%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×2m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LSG-A",
+            image: "img/LSG-A.png",
+            category: "Load Cells",
+            description: "Alloy steel; Output adjustment for parallel using; Mainly used for platform scales, floor scales etc.",
+            specification: {
+      		    table: '<table>' +
+                    '<tr><th>Rated Capacity</th><td>500,1000,2000,3000 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+                    '<tr><th>Rated Output</th><td>3.0±0.25%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>385±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×3m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LSG-D",
+            image: "img/LSG-D.png",
+            category: "Load Cells",
+            description: "Alloy steel; Output adjustment for parallel using; Mainly used for platform scales, floor scales etc.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>5000,8000 (kg）</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±0.25%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>385±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø6mm×8m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LSH-A",
+            image: "img/LSH-A.png",
+            category: "Load Cells",
+            description: "Alloy steel; Output adjustment for parallel using; Mainly used for truck scales, floor scales etc.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>10,20,30,40 (T）</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±0.25%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>780±15 Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>700±5 Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø6mm×16m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAQ-C",
+            image: "img/LAQ-C.png",
+            category: "Load Cells",
+            description: "Alloy steel; Output adjustment for parallel using; Mainly used for price computing scales, counting scales,platform scales etc. With adjustable screw to provide mechanical protection; Max.platform size: 1000×1000mm.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>200,500,750,1000,1500,2000 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±0.5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±5%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×2m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAE-C2",
+            image: "img/LAE-C2.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for price computing scales, counting scales, packing machineries, etc.; Connection with 6-Wire Shielded Cable; With humidity resistant protective coating; Max.platform size: 400×400mm.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>5,10,20,30,50,100,200 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>G</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.01%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.02%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥5000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø6mm×1.5m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LTQ-A",
+            image: "img/LTQ-A.png",
+            category: "Load Cells",
+            description: "Stainless steel; Mainly used for price computing scales, counting scales, packing machineries, etc.; With humidity resistant protective coating; Output adjustment for parallel using; With adjustable screw to provide mechanical protection; Max.platform size: 200×200mm.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>20,30,50,100 (lb)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±0.25%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>385±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.015%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø6mm×3m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP67</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAS-A",
+            image: "img/LAS-A.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for crane scales,hopper scales,tensile testing etc.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>2,5,10,20,30,50,100 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±10%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>395±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±5Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø0.8mm×0.5m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP65</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAS-B",
+            image: "img/LAS-B.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for crane scales,hopper scales,tensile testing etc.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>5,10,15,20,30,50,100,200 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±10%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×2m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAS-D3",
+            image: "img/LAS-D3.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Mainly used for crane scales,hopper scales,tensile testing etc.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>100,200,500,1000 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>405±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×2m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LSS-C",
+            image: "img/LSS-C.png",
+            category: "Load Cells",
+            description: "Alloy steel; Mainly used for crane scales,hopper scales,tensile testing etc.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>1000,2000 (kg)</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>B</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±5%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±2%R.O.</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>385±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±3Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.02%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.03%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.03%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Compensated Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>5－12VDC</td></tr>' +
+                    '<tr><th>Excitation,Maximum</th><td>18VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-20－+60℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>150%R.C.</td></tr>' +
+                    '<tr><th>Ultimate Overload</th><td>200%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø5mm×3m</td></tr>' +
+                    '<tr><th>Protection Class</th><td>IP66</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAU-C5 LTU-C5",
+            image: "img/LAU-C5 LTU-C5.png",
+            category: "Load Cells",
+            description: "Aluminum alloy & Stainless steel; Micro structure; Specially used for force measuring in a narrow space.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>50,100,200,300,500 (kg）</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>X</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±2%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±0.1 mV/V</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>360±20Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±10Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±0.05%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.05%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±0.05%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±0.05%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>≤6VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>120%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø3mm×2m</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LAU-A",
+            image: "img/LAU-A.png",
+            category: "Load Cells",
+            description: "Aluminum alloy; Specially used for force measuring in a narrow space.",
+            specification: {
+      		    table: '<table>' +
+               	    '<tr><th>Rated Capacity</th><td>20,50,100 (kg）</td></tr>' +
+               	    '<tr><th>Accuracy Class</th><td>X</td></tr>' +
+               	    '<tr><th>Rated Output</th><td>2.0±20%mV/V</td></tr>' +
+               	    '<tr><th>Zero Balance</th><td>±0.1 mV/V</td></tr>' +
+                    '<tr><th>Input Resistance</th><td>395±10Ω</td></tr>' +
+                    '<tr><th>Output Resistance</th><td>350±5Ω</td></tr>' +
+                    '<tr><th>Linearity Error</th><td>±1%R.O.</td></tr>' +
+                    '<tr><th>Repeatability Error</th><td>±0.05%R.O.</td></tr>' +
+                    '<tr><th>Hysteresis Error</th><td>±1%R.O.</td></tr>' +
+                    '<tr><th>Creep in 30 Min.</th><td>±1%R.O.</td></tr>' +
+                    '<tr><th>Temp.Effect on Output</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Temp.Effect on Zero</th><td>±0.05%R.O./10℃</td></tr>' +
+                    '<tr><th>Excitation,Recommended</th><td>≤6VDC</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-10－+40℃</td></tr>' +
+                    '<tr><th>Safe Overload</th><td>120%R.C.</td></tr>' +
+                    '<tr><th>Insulation Resistance</th><td>≥2000MΩ(50VDC)</td></tr>' +
+                    '<tr><th>Cable,Length</th><td>ø0.65mm×0.1m</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LA-01",
+            image: "img/LA-01.png",
+            category: "Load Cells",
+            description: "Micro structure（38×20×14mm）; Standard signal output,used for industry control.",
+            descriptionTable: {
+      		    table: '<table>' +
+                    '<tr><th>Model</th><td>LA-01 Load cell amplifier</td></tr>' +
+                    '<tr><th>Bridge voltage</th><td>5V</td></tr>' +
+                    '<tr><th>Input range</th><td>0.5-3mV/V</td></tr>' +
+                    '<tr><th>Zero balance range</th><td>±10%R.O.</td></tr>' +
+                    '<tr><th>Output</th><td>0-5V / 0-10V / 4-20mA</td></tr>' +
+                    '<tr><th>Accuracy</th><td>±0.5%</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-10 - +60℃</td></tr>' +
+                    '<tr><th>Supply voltage</th><td>12-24V</td></tr>' +
+                    '</table>'
+      		},
+        },
+        {
+            name: "LA-D03",
+            image: "img/LA-D03.png",
+            category: "Load Cells",
+            description: "Waterproof structure; Digital Calibration; Standard signal output,used for industry control.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Model</th><td>LA-D03 Load cell amplifier</td></tr>' +
+               	    '<tr><th>Bridge voltage</th><td>5V</td></tr>' +
+               	    '<tr><th>Input range</th><td>0.5-3mV/V</td></tr>' +
+               	    '<tr><th>Zero balance range</th><td>±10%R.O.</td></tr>' +
+                    '<tr><th>Output</th><td>0-5V / 0-10V / 4-20mA</td></tr>' +
+                    '<tr><th>Accuracy</th><td>±0.2%</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-10 - +60℃</td></tr>' +
+                    '<tr><th>Supply voltage</th><td>12-24V</td></tr>' +
+                    '</table>'
+      	    },
+        },
+        {
+            name: "LA-D01",
+            image: "img/LA-D01.png",
+            category: "Load Cells",
+            description: "Micro structure（φ20mm*5mm）; Standard signal output,used for industry control.",
+            descriptionTable: {
+      		    table: '<table>' +
+               	    '<tr><th>Model</th><td>LA-D01 Load cell amplifier</td></tr>' +
+               	    '<tr><th>A/D resolution</th><td>300,000</td></tr>' +
+               	    '<tr><th>Input range</th><td>0.5-3mV/V</td></tr>' +
+               	    '<tr><th>A/D Sample Rate</th><td>40 次/S</td></tr>' +
+                    '<tr><th>Weight output rate</th><td>25 次/S</td></tr>' +
+                    '<tr><th>Communication protocol</th><td>RS232</td></tr>' +
+                    '<tr><th>Operating Temp.Range</th><td>-10 - +60℃</td></tr>' +
+                    '<tr><th>Supply voltage</th><td>DC 5V~9V/0.1A</td></tr>' +
+                    '</table>'
+      	    },
+        },
+
+        // {
+        //     name: "Product Name 3",
+        //     image: "img/blackbg.jpg",
+        //     category: "Categories name",
+        //     description: "Description of Product 3",
+        // },
+        // {
+        //     name: "JK40 Portable Bluetooth scale",
+        //     image: "img/blackbg.jpg",
+        //     category: "Categories name",
+        //     description: '<p>Analytical, Density <br> and Moisture Scales</p>',
+        //     descriptionTable: {
+        //         table: '<table>' +
+        //         '<tr><td>Weight</td><td>10 kg</td></tr>' +
+        //         '<tr><td>Width</td><td>30 cm</td></tr>' +
+        //         '</table>',
+        //     },
+        //     specificationDescription: '<p>Analytical, Density <br> and Moisture Scales</p>',
+        //     specification: {
+        //         table: '<table>' +
+        //         '<tr><th>Weight</th><td>10 kg</td></tr>' +
+        //         '<tr><th>Width</th><td>30 cm</td></tr>' +
+        //         '</table>'
+        //     }
+        // },
+        // {
+        //     name: "Product Name 2",
+        //     image: "img/blackbg.jpg",
+        //     category: "Categories name",
+        //     description: '<p>Analytical, Density <br> and Moisture Scales</p>',
+        //     specificationDescription: '<ol type="1">' + 
+        //             '<li>Coffee</li>' +
+        //             '<li>Tea</li>' +
+        //             '<li>Milk</li>' + 
+        //             '</ol>',
+        // },
+
     ];
 
     var productGrid = document.getElementById("productGrid");
@@ -395,18 +1691,21 @@
 
         var productImage = document.createElement("img");
         productImage.src = product.image;
+        productImage.className = "w-100";
 
-        var productName = document.createElement("h2");
+        var productName = document.createElement("h1");
         productName.textContent = product.name;
+        productName.className = "popup-product-name";
 
         var productCategory = document.createElement("p");
         productCategory.textContent = product.category;
+        productCategory.className = "popup-product-category";
 
         var productDetailDiv = document.createElement("div");
         productDetailDiv.className = "product-detail";
 
         var productDetailFirstRowDiv = document.createElement("div");
-        productDetailFirstRowDiv.className = "product-detail-firstRow";
+        productDetailFirstRowDiv.className = "product-detail-firstRow pb-4";
 
         var productDetailSecondRowDiv = document.createElement("div");
         productDetailSecondRowDiv.className = "product-detail-secondRow";
@@ -415,26 +1714,42 @@
         productDetailImageDiv.className = "product-detail-imageColoum";
 
         var productDetailDescriptionDiv = document.createElement("div");
-        productDetailDescriptionDiv.className = "product-detail-description";
+        productDetailDescriptionDiv.className = "product-detail-description px-4";
 
-        productDetailImageDiv.appendChild(productName);
+        productDetailImageDiv.appendChild(productImage);
 
         productDetailDescriptionDiv.appendChild(productName);
         productDetailDescriptionDiv.appendChild(productCategory);
 
         productDetailDiv.appendChild(closeBtn);
 
-        productDetailFirstRowDiv.appendChild(productImage);
-        productDetailFirstRowDiv.appendChild(productName);
-
+        productDetailFirstRowDiv.appendChild(productDetailImageDiv);
+        productDetailFirstRowDiv.appendChild(productDetailDescriptionDiv);
+        
         // productDetailDiv.appendChild(closeBtn);
         // productDetailDiv.appendChild(productName);
         // productDetailDiv.appendChild(productImage);
 
         if (product.description) {
             var productDescription = document.createElement("p");
-            productDescription.textContent = product.description;
-            productDetailDiv.appendChild(productDescription);
+            productDescription.innerHTML = product.description;
+            productDetailDescriptionDiv.appendChild(productDescription);
+            productDescription.className = "popup-product-description";
+        }
+
+        if (product.descriptionTable && product.descriptionTable.table) {
+            var descriptionTableTable = document.createElement("div");
+            descriptionTableTable.innerHTML = product.descriptionTable.table;
+            productDetailDescriptionDiv.appendChild(descriptionTableTable);
+
+            descriptionTableTable.className = "table table-striped";
+        }
+
+        if (product.specificationDescription) {
+            var productSpecificationDescription = document.createElement("p");
+            productSpecificationDescription.innerHTML = product.specificationDescription;
+            productDetailSecondRowDiv.appendChild(productSpecificationDescription);
+            productSpecificationDescription.className = "popup-product-description";
         }
 
         if (product.specification && product.specification.table) {
@@ -456,7 +1771,66 @@
         });
     }
 
+     /* Filter the products */
+    function filterProducts(category) {
+        var filteredProducts;
+        if (category === "all") {
+            filteredProducts = products;
+        } else {
+            filteredProducts = products.filter(function(product) {
+                return product.category === category;
+            });
+        }
+        renderProductGrid(filteredProducts);
+    }
+
+    function renderProductGrid(filteredProducts) {
+        productGrid.innerHTML = "";
+        filteredProducts.forEach(function(product) {
+            var productItem = document.createElement("div");
+            productItem.className = "product-item";
+
+            var productName = document.createElement("h2");
+            productName.textContent = product.name;
+            // productName.className = "product-name";
+
+            var productImage = document.createElement("img");
+            productImage.src = product.image;
+            // productImage.className = "product-image";
+
+            var productCategory = document.createElement("p");
+            productCategory.textContent = product.category;
+            // productCategory.className = "product-category";
+
+            productItem.appendChild(productImage);
+            productItem.appendChild(productCategory);
+            productItem.appendChild(productName);
+
+            productItem.addEventListener("click", function() {
+                openProductDetailPage(product);
+            });
+            
+            productGrid.appendChild(productItem);
+        });
+    }
+
 </script>
 
 
 </html>
+
+<!-- 
+
+1. Load Cells  ()
+2. Platform and Floor Scales => (complete)
+3. Analytical, Density and Moisture Scales => (complete)
+4. Hanging and Crane Scales => (complete)
+5. Weighbridges an Weigh-pads
+6. Weighing and Counting Scales => (complete)
+7. Waterproof Scales
+8. Weighing Indicators
+9. Bench Scales
+10. Price Computing and Retail Scales => (complete)
+
+ -->
+
