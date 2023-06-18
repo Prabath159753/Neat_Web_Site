@@ -700,13 +700,26 @@ tbody tr:nth-child(even) {
 }
 
 /* popup window in product details page responsive */
+@media screen and (max-width: 425px) {
+    .modal-content {
+        max-width: 80%;
+    }
+    .product-detail-imageColoum {
+        width: 65% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .product-detail-firstRow {
         flex-direction: column !important;
     }
     .product-detail-imageColoum {
         padding-bottom: 1rem !important;
-        width: 100%;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .product-detail-description {
         width: 100% !important;
