@@ -72,6 +72,61 @@
         return false;
     });
 
+
+	var activeFilter = 'all';
+
+	$('.product-filter-button').on('click', function(e) {
+		// remove btn-primary from all buttons first
+		$('.product-filter-button').removeClass('btn-primary');
+		$('.product-filter-button').addClass('btn-outline-primary');
+	  
+		// add btn-primary to active button
+		var button = $(this);
+		button.removeClass('btn-outline-primary');
+		button.addClass('btn-primary');
+		filterItems(button.data("filter"));
+		e.preventDefault();
+		console.log(button.data("filter"));
+	})
+
+	function filterItems(filter) {
+		if(filter === activeFilter) {
+		  return;
+		}
+	  
+		activeFilter = filter;
+		$('.product-grid .product-item').each(function () {
+		  var card = $(this);
+		  var groups = card.data("groups");
+	  
+		  console.log(groups);
+		  console.log(card);
+	  
+		//   var show = false;
+		//   if(filter === 'all') {
+		// 	show = true;
+		//   }
+		  
+		//   else {
+		// 	for(var i = 0; i < groups.length; i ++) {
+		// 	  if(groups[i] === filter) {
+		// 		show = true;
+		// 		// console.log(filter);
+		// 		console.log(groups[i]);
+		// 	  }
+		// 	}
+		//   }
+		//   // hide everything first
+		//   card.fadeOut(400);
+	  
+		//   setTimeout(function() {
+		// 	if(show && !card.is(":visible")) {
+		// 		card.fadeIn(400)
+		// 	  }
+		// 	}, 500);
+		});
+	}
+
     
 })(jQuery);
 
