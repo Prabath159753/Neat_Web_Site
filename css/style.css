@@ -425,7 +425,8 @@ article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:h
     font-size: 2.8rem;
     height: 90px;
     width: 90px;
-    background: rgba(255, 255, 255, 0.178);
+    /* background: rgba(255, 255, 255, 0.178); */
+    background: #5684FC;
     border-radius: 50%;
     display: inline-block;
     color: #ffffff;
@@ -642,6 +643,12 @@ tbody tr:nth-child(even) {
     }
     .txt {
         margin-bottom: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-page-service-product-card-img {
+        height: 85px;
     }
 }
 
