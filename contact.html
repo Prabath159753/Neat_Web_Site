@@ -36,6 +36,49 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- EmailJS Connection -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- EmailJS Connection Public Key -->
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("GVkOq8xRamOdt0aLQ");
+        })();
+    </script>
+
+    <script>
+        function sendMail() {
+            var params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject : document.getElementById("subject").value ,
+                message: document.getElementById("message").value,
+            };
+
+            // EmailJS Connection SERVICE_ID
+            const serviceID ="service_g9cdapw";
+            // EmailJS Connection TEMPLETE_ID
+            const templateID = "template_czi0s18";
+
+            emailjs
+                .send(serviceID, templateID, params)
+                .then(res=>{
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("message").value = "";
+                console.log(res);
+                alert("Your message sent successfully!!")
+
+                })
+                .catch(err=>console.log(err));
+            }
+       
+    </script>
+
 </head>
 
 <body>
@@ -178,14 +221,16 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 220px;"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 220px;"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
                                 <!-- <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="Message"></textarea> -->
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3 font-weight-bold font-size-1-5rem letter-spacing" type="submit">Send Message</button>
+                                <div class="btn btn-primary w-100 py-3 font-weight-bold font-size-1-5rem letter-spacing" onclick="sendMail()">Submit</div>
+                                <!-- <button class="btn btn-primary w-100 py-3 font-weight-bold font-size-1-5rem letter-spacing" onclick="sendMail()">Send Message</button> -->
                             </div>
+                            
                         </div>
                     </form>
                 </div>
