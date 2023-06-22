@@ -465,6 +465,13 @@ article.client-card {
     color: #ffffff;
 }
 
+/* .contact-no {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 7px;
+    background: #061846;
+} */
+
 
 
 /* --------- product us page --------- */
@@ -804,6 +811,12 @@ tbody tr:nth-child(even) {
 }
 
 /* contact us page responsive */
+@media screen and (max-width: 345px) {
+    .contact-no {
+        font-size: 0.9rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .contact-banner-container {
         margin-bottom: 0 !important;
